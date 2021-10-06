@@ -1,2 +1,2 @@
-# Becoming-a-Full-Stack-Java-Developer
-Becoming a Full-Stack Java Developer, published by Packt
+# Full-Stack Web Development with Spring Boot and Angular
+Full-Stack Web Development with Spring Boot and Angular, published by Packt
