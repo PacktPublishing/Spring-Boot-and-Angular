@@ -1,0 +1,5 @@
+client:
+  url: http://localhost:4200
+
+jwt:
+  secret: 8fhgeigayuf64oq8ltw36pi84wl87trf8afpw7ty934t7fwaeGTFyugfldlsjfdglja
