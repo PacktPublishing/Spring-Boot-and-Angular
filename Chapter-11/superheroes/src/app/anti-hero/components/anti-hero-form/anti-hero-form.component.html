@@ -1,0 +1,40 @@
+<mat-card class="form-card">
+    <h2>{{selectedId ? "Update/View Hero" : "Create Hero"}}</h2>
+    <form class="anti-hero-form" [formGroup]="form">
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>First Name</mat-label>
+            <input matInput formControlName="firstName" 
+                   placeholder="Ex. Tony">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName" 
+                   placeholder="Ex. Stark">
+        </mat-form-field>
+    
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>House</mat-label>
+            <input matInput formControlName="house" 
+                   placeholder="Ex. California">
+        </mat-form-field>
+    
+    
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Known As</mat-label>
+            <input matInput formControlName="knownAs" 
+                   placeholder="Ex. Iron Man">
+        </mat-form-field>
+        <div class="button-group">
+
+            <button mat-raised-button color="primary" (click)="emitAction()">
+                 {{actionButtonLabel}}
+            </button>  
+            &nbsp;
+            <button  mat-raised-button color="warn" (click)="clear()">
+                 Clear
+            </button> 
+        </div>
+    
+    </form>
+</mat-card>
