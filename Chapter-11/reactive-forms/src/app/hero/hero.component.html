@@ -1,0 +1,41 @@
+<form [formGroup]="heroForm" (ngSubmit)="onSubmit()"> 
+    <label for="first-name">First Name: </label> 
+    <input id="first-name" type="text"  formControlName="firstName"> 
+    <div *ngIf="firstName?.invalid && (firstName?.dirty || firstName?.touched)"
+        class="alert alert-danger">
+
+    <div *ngIf="firstName?.errors?.['required']">
+        Name is required.
+    </div>
+
+    </div>
+    <label for="last-name">Last Name: </label> 
+    <input id="last-name" type="text"   formControlName="lastName">
+    
+    <label for="known-as">Known As: </label> 
+    <input id="known-as" type="text"   formControlName="knownAs"> 
+
+    <div formGroupName="address"> 
+        <label for="street">Street: </label> 
+        <input id="street" type="text" formControlName="street"> 
+        
+        <label for="city">City: </label> 
+        <input id="city" type="text" formControlName="city"> 
+
+        <label for="country">Country: </label> 
+        <input id="country" type="text" formControlName="country">
+    
+    </div>
+    <ng-container formArrayName="powers">
+        <label for="tags">Powers</label>
+        <div class="input-group mb-3" *ngFor="let _ of powerFormArray.controls; index as i">
+           <input type="text" class="form-control" [formControlName]="i" placeholder="Power Name">
+           <button (click)="deletePower(i)" class="btn btn-   danger" type="button">Delete</button>
+        </div>
+        <button class="btn btn-info me-md-2" type="button" (click)="addPower()">Add</button>
+    </ng-container>
+    <br>
+    <button style="float: right;" class="btn btn-info me-md-2" type="submit">Submit</button>
+         
+</form>
+  
