@@ -9,7 +9,7 @@ import { AntiHero } from '../../models/anti-hero.interface';
 })
 export class AntiHeroListComponent implements OnInit {
   @Input() headers: Array<{headerName: string, fieldName: keyof AntiHero}> = [];
-  @Input() antiHeroes: Array<AntiHero> = [];
+  @Input() antiHeroes: ReadonlyArray<AntiHero> = [];
   @Output() antiHero = new EventEmitter<{antiHero: AntiHero, action :TableActions}>();
   headerFields: string[] = [];
 
