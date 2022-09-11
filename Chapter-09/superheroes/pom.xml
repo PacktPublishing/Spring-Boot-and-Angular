@@ -230,6 +230,7 @@
 					</execution>
 				</executions>
 			</plugin>
+			<!-- START packaging spring and client app in one jar -->
 			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<executions>
