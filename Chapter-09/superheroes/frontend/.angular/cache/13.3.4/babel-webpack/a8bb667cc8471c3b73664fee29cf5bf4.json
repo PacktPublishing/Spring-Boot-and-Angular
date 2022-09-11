@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var TableActions = /*#__PURE__*/(() => {\n  (function (TableActions) {\n    TableActions[TableActions[\"View\"] = 0] = \"View\";\n    TableActions[TableActions[\"Delete\"] = 1] = \"Delete\";\n  })(TableActions || (TableActions = {}));\n\n  return TableActions;\n})();","map":null,"metadata":{},"sourceType":"module"}

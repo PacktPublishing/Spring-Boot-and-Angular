@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <copy todir="/Users/inmetadeveloper/Desktop/Book/Full-Stack-Web-Development-with-Spring-Boot-and-Angular/Chapter-09/superheroes/target/classes/public">
+      <fileset dir="/Users/inmetadeveloper/Desktop/Book/Full-Stack-Web-Development-with-Spring-Boot-and-Angular/Chapter-09/superheroes/frontend/dist/superheroes" />
+    </copy>
+  </target>
+</project>
