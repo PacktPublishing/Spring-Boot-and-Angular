@@ -1,6 +1,6 @@
 <mat-card>
 
-    <mat-card-title>{{title}}</mat-card-title>
+    <mat-card-title data-cy="auth-title">{{title}}</mat-card-title>
     <mat-card-content>
         <form [formGroup]="form" (ngSubmit)="submit()">
         <p *ngIf="error" class="error">
@@ -8,23 +8,23 @@
         </p>
         <p>
             <mat-form-field>
-            <input type="text" matInput placeholder="Username" formControlName="email">
+            <input type="text" matInput placeholder="Username" formControlName="email" data-cy="email">
             </mat-form-field>
         </p>
 
         <p>
             <mat-form-field>
-            <input type="password" matInput placeholder="Password" formControlName="password">
+            <input type="password" matInput placeholder="Password" formControlName="password" data-cy="password">
             </mat-form-field>
         </p>
-        
+
 
 
         <div class="button">
-            <button type="submit" mat-button>{{title}}</button>
+            <button type="submit" mat-button data-cy="submit-login">{{title}}</button>
         </div>
-        <p *ngIf="title == 'Login'" class="link" [routerLink]="['register']" routerLinkActive="router-link-active" >Create account</p>
-        <p *ngIf="title == 'Register'" class="link" [routerLink]="['']" routerLinkActive="router-link-active" >Sign In</p>
+        <p *ngIf="title == 'Login'" class="link" [routerLink]="['register']" routerLinkActive="router-link-active">Create account</p>
+        <p *ngIf="title == 'Register'" class="link" [routerLink]="['']" routerLinkActive="router-link-active">Sign In</p>
         </form>
     </mat-card-content>
 </mat-card>

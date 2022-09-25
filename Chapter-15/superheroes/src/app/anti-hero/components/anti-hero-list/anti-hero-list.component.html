@@ -2,23 +2,22 @@
     <!-- Data for columns -->
     <ng-container *ngFor="let item of headers" [matColumnDef]="item.fieldName">
       <th mat-header-cell *matHeaderCellDef> {{item.headerName}} </th>
-      <td mat-cell *matCellDef="let element"> {{element[item.fieldName]}} </td>
+      <td mat-cell *matCellDef="let element" data-cy="row"> {{element[item.fieldName]}} </td>
     </ng-container>
     <!-- Actions for specific item -->
     <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef> Actions </th>
-        <td mat-cell *matCellDef="let element"> 
-            <button (click)="selectAntiHero(element, 0)" mat-raised-button color="primary">
+        <td mat-cell *matCellDef="let element">
+            <button (click)="selectAntiHero(element, 0)" mat-raised-button color="primary" data-cy="view">
                 <mat-icon>pageview</mat-icon> View
-            </button>  
+            </button>
             &nbsp;
-            <button (click)="selectAntiHero(element, 1)" mat-raised-button color="warn">
+            <button (click)="selectAntiHero(element, 1)" mat-raised-button color="warn" data-cy="delete">
                 <mat-icon>delete</mat-icon> Delete
-            </button>   
-        </td>  
+            </button>
+        </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="headerFields"></tr>
     <tr mat-row *matRowDef="let row; columns: headerFields"></tr>
   </table>
-  

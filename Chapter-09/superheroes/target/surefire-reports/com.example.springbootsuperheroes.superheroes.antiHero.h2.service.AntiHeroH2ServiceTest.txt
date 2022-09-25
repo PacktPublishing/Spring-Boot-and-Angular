@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.example.springbootsuperheroes.superheroes.antiHero.h2.service.AntiHeroH2ServiceTest
--------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.353 s - in com.example.springbootsuperheroes.superheroes.antiHero.h2.service.AntiHeroH2ServiceTest

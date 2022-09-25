@@ -1,12 +1,15 @@
 <p>
     <mat-toolbar>
-        <button mat-raised-button color="primary" (click)="emitAction(0)">
+        <button mat-raised-button color="primary" (click)="emitAction(0)" data-cy="create">
             <mat-icon>fiber_new</mat-icon> Create
-        </button>  
+        </button>
         &nbsp;
-        <button  mat-raised-button color="warn" (click)="emitAction(1)">
+        <button  mat-raised-button color="warn" (click)="emitAction(1)" data-cy="delete-all">
             <mat-icon>delete</mat-icon> Delete All
-        </button> 
+        </button>
+
+        <button  mat-button color="danger" (click)="logOut()" data-cy="logout">
+            <mat-icon>logout</mat-icon> logout
+        </button>
     </mat-toolbar>
   </p>
-  

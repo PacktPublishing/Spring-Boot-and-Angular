@@ -1,1 +1,0 @@
-{"ast":null,"code":"export const environment = {\n  production: true,\n  apiURL: \"http://localhost:8080/api/v1\",\n  authURL: \"http://localhost:8080\" // <-- Change this to your Auth URL\n\n};","map":null,"metadata":{},"sourceType":"module"}

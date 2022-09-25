@@ -1,60 +1,21 @@
-2022-09-17 00:54:38,413 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
-2022-09-17 00:54:38,466 INFO o.s.b.StartupInfoLogger [restartedMain] Starting SuperheroesApplication using Java 17.0.4.1 on Devlins-MacBook-Pro.local with PID 38606 (/Users/inmetadeveloper/Desktop/Book/Full-Stack-Web-Development-with-Spring-Boot-and-Angular/Chapter-09/superheroes/target/classes started by inmetadeveloper in /Users/inmetadeveloper/Desktop/Book/Full-Stack-Web-Development-with-Spring-Boot-and-Angular/Chapter-09/superheroes)
-2022-09-17 00:54:38,469 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v2.6.2, Spring v5.3.14
-2022-09-17 00:54:38,470 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2022-09-17 00:54:38,514 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-09-17 00:54:38,514 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-09-17 00:54:39,500 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-09-17 00:54:39,502 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-09-17 00:54:40,499 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 986 ms. Found 2 JPA repository interfaces.
-2022-09-17 00:54:40,537 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Multiple Spring Data modules found, entering strict repository configuration mode!
-2022-09-17 00:54:40,539 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2022-09-17 00:54:40,577 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springbootsuperheroes.superheroes.antiHero.repository.AntiHeroRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
-2022-09-17 00:54:40,578 INFO o.s.d.r.c.RepositoryConfigurationExtensionSupport [restartedMain] Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.example.springbootsuperheroes.superheroes.user.repository.UserRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
-2022-09-17 00:54:40,579 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
-2022-09-17 00:54:41,724 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
-2022-09-17 00:54:41,734 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
-2022-09-17 00:54:41,734 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2022-09-17 00:54:41,734 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.56]
-2022-09-17 00:54:41,801 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2022-09-17 00:54:41,801 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3286 ms
-2022-09-17 00:54:41,833 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2022-09-17 00:54:42,073 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2022-09-17 00:54:42,084 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [restartedMain] H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/springDevDb'
-2022-09-17 00:54:42,202 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-09-17 00:54:42,263 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.3.Final
-2022-09-17 00:54:42,459 INFO o.h.a.c.r.j.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-09-17 00:54:42,566 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2022-09-17 00:54:43,239 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-09-17 00:54:43,247 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-09-17 00:54:43,679 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'jwtRequestFilter' configured for use
-2022-09-17 00:54:43,846 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-09-17 00:54:44,232 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [public/index.html]
-2022-09-17 00:54:44,869 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure Ant [pattern='/**'] with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f16d4b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@78f1b80f, org.springframework.security.web.header.HeaderWriterFilter@18fbf484, org.springframework.security.web.authentication.logout.LogoutFilter@7d704dae, com.example.springbootsuperheroes.superheroes.jwt.filters.JwtRequestFilter@4bcb48c0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21d907ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cb32b0c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42686adf, org.springframework.security.web.session.SessionManagementFilter@3f3e967c, org.springframework.security.web.access.ExceptionTranslationFilter@5fa0a2d9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@238443d3]
-2022-09-17 00:54:44,899 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2022-09-17 00:54:44,920 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
-2022-09-17 00:54:44,935 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
-2022-09-17 00:54:44,945 INFO o.s.b.StartupInfoLogger [restartedMain] Started SuperheroesApplication in 7.14 seconds (JVM running for 8.055)
-2022-09-17 00:55:11,779 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-09-17 00:55:11,783 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
-2022-09-17 00:55:11,816 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 32 ms
-2022-09-17 01:16:37,482 INFO c.e.s.s.a.c.AntiHeroController [http-nio-8080-exec-1] Using SLF4J: Getting anti-hero list - getAntiHeroes()
-2022-09-17 01:16:37,483 INFO c.e.s.s.a.c.AntiHeroController [http-nio-8080-exec-1] Using SLF4J Lombok: Getting anti hero list - getAntiHeroes()
-2022-09-17 01:22:50,473 INFO c.e.s.s.a.c.AntiHeroController [http-nio-8080-exec-7] Using SLF4J: Getting anti-hero list - getAntiHeroes()
-2022-09-17 01:22:50,473 INFO c.e.s.s.a.c.AntiHeroController [http-nio-8080-exec-7] Using SLF4J Lombok: Getting anti hero list - getAntiHeroes()
-2022-09-17 01:23:43,157 INFO c.e.s.s.a.c.AntiHeroController [http-nio-8080-exec-2] Using SLF4J: Getting anti-hero list - getAntiHeroes()
-2022-09-17 01:23:43,159 INFO c.e.s.s.a.c.AntiHeroController [http-nio-8080-exec-2] Using SLF4J Lombok: Getting anti hero list - getAntiHeroes()
-2022-09-17 02:02:48,395 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m5s822ms).
-2022-09-17 02:23:56,419 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m8s141ms).
-2022-09-17 02:29:43,462 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m17s24ms).
-2022-09-17 02:59:36,360 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m22s896ms).
-2022-09-17 03:53:53,338 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m46s954ms).
-2022-09-17 04:00:26,170 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m32s845ms).
-2022-09-17 04:48:28,929 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47m32s743ms).
-2022-09-17 05:42:46,003 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m47s46ms).
-2022-09-17 06:37:02,184 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m46s179ms).
-2022-09-17 07:30:48,650 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m46s459ms).
-2022-09-17 07:58:40,670 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m21s865ms).
-2022-09-17 08:35:09,583 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-09-17 08:35:09,628 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2022-09-17 08:35:09,632 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-25 01:32:41,287 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m11s663ms).
+2022-09-25 02:23:25,167 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50m13s791ms).
+2022-09-25 02:28:58,719 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m3s536ms).
+2022-09-25 02:46:19,336 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m20s617ms).
+2022-09-25 03:19:46,625 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m57s293ms).
+2022-09-25 04:14:02,899 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m46s247ms).
+2022-09-25 05:08:19,983 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m47s68ms).
+2022-09-25 06:02:07,043 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m47s60ms).
+2022-09-25 06:56:23,348 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m46s335ms).
+2022-09-25 07:50:39,684 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m46s311ms).
+2022-09-25 08:00:01,781 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m22s98ms).
+2022-09-25 08:45:33,518 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m31s700ms).
+2022-09-25 09:39:49,753 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m46s216ms).
+2022-09-25 10:09:56,330 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m36s559ms).
+2022-09-25 12:32:26,497 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=41m29s331ms).
+2022-09-25 14:30:23,604 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m26s384ms).
+2022-09-25 14:31:52,979 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s151ms).
+2022-09-25 14:34:18,440 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m55s453ms).
+2022-09-25 16:22:48,507 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h48m62ms).
+2022-09-25 17:19:08,421 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=55m19s896ms).
+2022-09-25 17:25:04,961 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m56s540ms).

@@ -3,38 +3,38 @@
     <form class="anti-hero-form" [formGroup]="form">
         <mat-form-field class="example-full-width" appearance="fill">
             <mat-label>First Name</mat-label>
-            <input matInput formControlName="firstName" 
-                   placeholder="Ex. Tony">
+            <input matInput formControlName="firstName"
+                   placeholder="Ex. Tony"  data-cy="firstName">
         </mat-form-field>
-    
+
         <mat-form-field class="example-full-width" appearance="fill">
             <mat-label>Last Name</mat-label>
-            <input matInput formControlName="lastName" 
-                   placeholder="Ex. Stark">
+            <input matInput formControlName="lastName"
+                   placeholder="Ex. Stark" data-cy="lastName">
         </mat-form-field>
-    
+
         <mat-form-field class="example-full-width" appearance="fill">
             <mat-label>House</mat-label>
-            <input matInput formControlName="house" 
-                   placeholder="Ex. California">
+            <input matInput formControlName="house"
+                   placeholder="Ex. California"  data-cy="house">
         </mat-form-field>
-    
-    
+
+
         <mat-form-field class="example-full-width" appearance="fill">
             <mat-label>Known As</mat-label>
-            <input matInput formControlName="knownAs" 
-                   placeholder="Ex. Iron Man">
+            <input matInput formControlName="knownAs"
+                   placeholder="Ex. Iron Man" data-cy="knownAs">
         </mat-form-field>
         <div class="button-group">
 
-            <button mat-raised-button color="primary" (click)="emitAction()">
+            <button mat-raised-button color="primary" (click)="emitAction()" data-cy="action">
                  {{actionButtonLabel}}
-            </button>  
+            </button>
             &nbsp;
             <button  mat-raised-button color="warn" (click)="clear()">
                  Clear
-            </button> 
+            </button>
         </div>
-    
+
     </form>
 </mat-card>
