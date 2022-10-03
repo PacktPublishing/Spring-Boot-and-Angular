@@ -1,5 +1,4 @@
 <mat-card>
-
     <mat-card-title data-cy="auth-title">{{title}}</mat-card-title>
     <mat-card-content>
         <form [formGroup]="form" (ngSubmit)="submit()">
@@ -11,15 +10,11 @@
             <input type="text" matInput placeholder="Username" formControlName="email" data-cy="email">
             </mat-form-field>
         </p>
-
         <p>
             <mat-form-field>
             <input type="password" matInput placeholder="Password" formControlName="password" data-cy="password">
             </mat-form-field>
         </p>
-
-
-
         <div class="button">
             <button type="submit" mat-button data-cy="submit-login">{{title}}</button>
         </div>
