@@ -20,7 +20,7 @@ describe("Login Page", () => {
     cy.get("[data-cy=logout]").click();
   });
 
-  // basic test
+  // simple test
   it.skip("should display login page", () => {
     cy.visit("/");
     cy.url().should("include", "/login");
