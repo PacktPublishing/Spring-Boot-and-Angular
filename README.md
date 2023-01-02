@@ -46,7 +46,8 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 * Modern API Development with Spring and Spring Boot [[Packt]](https://www.packtpub.com/product/modern-api-development-with-spring-and-spring-boot/9781800562479) [[Amazon]](https://www.amazon.com/dp/1800562470)
 
 * Angular Projects.– Second Edition [[Packt]](https://www.packtpub.com/product/angular-projects-second-edition/9781800205260) [[Amazon]](https://www.amazon.com/dp/1800205260)
-
+## Errata 
+ * Page 52 (bullet point 2, line 1):  **@ComponentScan:** _should be_ **@Configuration:**
 ## Get to Know the Author
 **Devlin Basilan Duldulao**
  is a full-stack engineer with over 8 years of web, mobile, and cloud development experience. He has been a recipient of Microsoft’s Most Valuable Professional (MVP) award since 2018 and earned the title of Auth0 Ambassador for his passion for sharing best practices in application securities. Devlin has passed some prestigious exams in software and cloud development such as the MSCD, Azure Associate Developer, AWS Associate Developer, and Terraform Associate certifications.
